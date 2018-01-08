@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">VNAIRLINE</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="login">Đăng nhập</string>
+    <string name="login_again">Login again</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="no_get_location">Không lấy được vị trí</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="loging">Đang đăng nhập...</string>
+    <string name="not_connect_internet">Không có kết nối mạng</string>
+    <string name="try_again">Try Again</string>
+    <string name="exit">Exit</string>
+
+    <string name="login_fail">Login failed</string>
+    <string name="confirm_password_not_match">Xác nhận mật khẩu mới không khớp</string>
+    <string name="enter_full_field">Bạn phaair nhập đầy đủ các trường</string>
+    <string name="change_password_success">Change password success</string>
+    <string name="id_or_oldpassword_fail">Tên đăng nhập hoặc mật khẩu cũ sai</string>
+    <string name="change_password_failed">Thay đổi mật khẩu không thành công</string>
+    <string name="has_error">Đã xảy ra lỗi</string>
+    <string name="request_invalid"> Yêu cầu không hợp lệ</string>
+    <string name="clear">Clear</string>
+    <string name="nodtata">Không có dữ liêu</string>
+    <string name="no_connect_server">Không kết nối được đến server</string>
+    <string name="done">Xong</string>
+    <string name="cancel">Thoát</string>
+    <string name="back"> Quay lại</string>
+    <string name="detail">Chi tiết</string>
+    <string name="sending_data">Đang gửi dữ liệu ...</string>
+    <string name="remember_username">Nhớ tài khoản</string>
+</resources>
