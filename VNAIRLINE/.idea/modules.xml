@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/VNAIRLINE.iml" filepath="$PROJECT_DIR$/VNAIRLINE.iml" />
+      <module fileurl="file://E:\hungdn\Ngochung_App\VNAIRLINE-android\VNAIRLINE\VNAIRLINE.iml" filepath="E:\hungdn\Ngochung_App\VNAIRLINE-android\VNAIRLINE\VNAIRLINE.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\hungdn\Ngochung_App\VNAIRLINE-android\VNAIRLINE\app\app.iml" filepath="E:\hungdn\Ngochung_App\VNAIRLINE-android\VNAIRLINE\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -59,7 +59,7 @@ public class LoginActivity extends Activity {
                 progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progress.setIndeterminate(true);
                 progress.show();
-                Intent in = new Intent(LoginActivity.this, MainActivity.class);
+                Intent in = new Intent(LoginActivity.this, PalletActivity.class);
                 startActivity(in);
               //  login(ed_user.getText().toString(),ed_pass.getText().toString());
 
@@ -105,7 +105,7 @@ public class LoginActivity extends Activity {
                         }
                     }
                 })
-                .setNegativeButton(getResources().getString(R.string.exit), new DialogInterface.OnClickListener() {
+                .setNegativeButton(getResources().getString(R.string.exits), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                         finish();

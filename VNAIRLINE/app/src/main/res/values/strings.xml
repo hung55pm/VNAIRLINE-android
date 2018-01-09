@@ -17,7 +17,6 @@
     <string name="loging">Đang đăng nhập...</string>
     <string name="not_connect_internet">Không có kết nối mạng</string>
     <string name="try_again">Try Again</string>
-    <string name="exit">Exit</string>
 
     <string name="login_fail">Login failed</string>
     <string name="confirm_password_not_match">Xác nhận mật khẩu mới không khớp</string>
@@ -36,4 +35,24 @@
     <string name="detail">Chi tiết</string>
     <string name="sending_data">Đang gửi dữ liệu ...</string>
     <string name="remember_username">Nhớ tài khoản</string>
+    <string name="uldid">ULDID</string>
+    <string name="unloading">UnLoading</string>
+    <string name="awbid">AWBID</string>
+    <string name="pieces">PIECES</string>
+    <string name="weight">WEIGHT</string>
+    <string name="shc">SHC</string>
+    <string name="nature">NATURE</string>
+    <string name="filght_no">Flight No : </string>
+    <string name="scanqr">Scan QR </string>
+    <string name="takephoto">Take Photo </string>
+    <string name="news">New </string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="contour">Contour</string>
+    <string name="w_vertical">W_VERTICAL</string>
+    <string name="w_horizontal">W_HORIZONTAL</string>
+    <string name="materail">MATERAIL</string>
+    <string name="finish_buil_up">Finish Build-up</string>
+    <string name="exits">Exit</string>
+
 </resources>
