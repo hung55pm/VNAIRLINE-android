@@ -54,5 +54,9 @@
     <string name="materail">MATERAIL</string>
     <string name="finish_buil_up">Finish Build-up</string>
     <string name="exits">Exit</string>
+    <string name="title_pallet">Pallet detail</string>
+    <string name="list_filght">List Flights</string>
+    <string name="next">Next</string>
+    <string name="previous">Pre</string>
 
 </resources>

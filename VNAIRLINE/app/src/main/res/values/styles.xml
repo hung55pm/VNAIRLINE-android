@@ -12,6 +12,7 @@
         <item name="android:listPreferredItemPaddingLeft">5dp</item>
         <item name="android:listPreferredItemPaddingRight">5dp</item>
         <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="android:itemBackground">@color/colorWhite</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -48,6 +49,17 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:textSize">16sp</item>
         <item name="android:background">@drawable/iphone_edittext_into_android</item>
+    </style>
+    <style name="styleedittextinvestorinfo_nofocus">
+        <item name="android:textColor">@color/colordarkblue</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/iphone_edittext_into_android</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
     </style>
 
     <style name="styleedittextinvestorinfo_no_edit">

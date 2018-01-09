@@ -4,13 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.fts.vnairline.PalletActivity">
+
+        <include layout="@layout/toolbar"></include>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -40,13 +44,13 @@
 
                         <EditText
                             android:id="@+id/edit_ulid_1"
-                            style="@style/styleedittextinvestorinfo"
+                            style="@style/styleedittextinvestorinfo_nofocus"
                             android:layout_width="200dp"
                             android:layout_marginLeft="5dp" />
 
                         <EditText
                             android:id="@+id/edit_ulid_2"
-                            style="@style/styleedittextinvestorinfo"
+                            style="@style/styleedittextinvestorinfo_nofocus"
                             android:layout_weight="1" />
                     </LinearLayout>
 
@@ -64,7 +68,7 @@
 
                         <EditText
                             android:id="@+id/edit_unloading"
-                            style="@style/styleedittextinvestorinfo"
+                            style="@style/styleedittextinvestorinfo_nofocus"
                             android:layout_weight="1" />
 
                     </LinearLayout>
@@ -166,16 +170,19 @@
                         android:padding="3dp">
 
                         <Button
+                            android:id="@+id/bt_news"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/news" />
 
                         <Button
+                            android:id="@+id/bt_save_pr"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/save" />
 
                         <Button
+                            android:id="@+id/bt_delete"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/delete" />
@@ -207,6 +214,7 @@
                             android:text="@string/filght_no" />
 
                         <TextView
+                            android:id="@+id/txt_flight_no"
                             style="@style/styletextemloyeeinfo"
                             android:layout_gravity="center"
                             android:text="vn1000" />
@@ -220,11 +228,13 @@
                         android:padding="3dp">
 
                         <Button
+                            android:id="@+id/bt_scan_qr"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/scanqr" />
 
                         <Button
+                            android:id="@+id/bt_take_photo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/takephoto" />
@@ -232,6 +242,7 @@
                     </LinearLayout>
 
                     <ImageView
+                        android:id="@+id/img"
                         android:layout_width="match_parent"
                         android:layout_height="225dp" />
 
@@ -242,9 +253,10 @@
                         android:padding="5dp">
 
                         <Button
+                            android:id="@+id/bt_precious"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/chevron_left" />
+                           android:text="@string/previous"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -252,9 +264,10 @@
                             android:layout_weight="1" />
 
                         <Button
+                            android:id="@+id/bt_next"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/chevron_right" />
+                            android:text="@string/next" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -268,9 +281,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="250dp"
                 android:orientation="vertical">
+                <ListView
+                    android:id="@+id/litsview_pallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
+                </ListView>
             </LinearLayout>
 
             <TextView
@@ -349,7 +367,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/finish_buil_up" />
-
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
                 <Button
                     android:id="@+id/bt_save"
                     android:layout_width="wrap_content"
@@ -357,6 +378,7 @@
                     android:text="@string/save" />
 
                 <Button
+                    android:layout_marginLeft="20dp"
                     android:id="@+id/bt_exits"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
