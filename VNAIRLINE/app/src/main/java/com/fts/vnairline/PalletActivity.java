@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class PalletActivity extends AppCompatActivity {
 
@@ -31,7 +32,7 @@ public class PalletActivity extends AppCompatActivity {
         int width = (int) ((getResources().getDisplayMetrics().widthPixels)*0.65);
         left.setLayoutParams(new LinearLayout.LayoutParams(width, LinearLayout.LayoutParams.WRAP_CONTENT));
         int width_uldid =(int) ((getResources().getDisplayMetrics().widthPixels)*0.27);
-        LinearLayout.LayoutParams la = new LinearLayout.LayoutParams(width_uldid, LinearLayout.LayoutParams.MATCH_PARENT);
+        RelativeLayout.LayoutParams la = new RelativeLayout.LayoutParams(width_uldid, LinearLayout.LayoutParams.MATCH_PARENT);
         la.setMargins(10,0,0,0);
         uldid_1.setLayoutParams(la);
     }

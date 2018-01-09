@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LoginActivity extends Activity {
+    private LinearLayout layout_login;
     private EditText ed_user, ed_pass;
     private Button btlogin;
     private TextView txtneed;
@@ -84,6 +86,13 @@ public class LoginActivity extends Activity {
         ed_user = (EditText) findViewById(R.id.ed_user);
         ed_pass = (EditText) findViewById(R.id.ed_pass);
         remmeber = (Switch) findViewById(R.id.switch1);
+//        layout_login =(LinearLayout)findViewById(R.id.layout_login);
+//        int width = (int) ((getResources().getDisplayMetrics().widthPixels)*0.8);
+//        int left = (int) (((getResources().getDisplayMetrics().widthPixels)*0.2)/2);
+//        int top = (int) (((getResources().getDisplayMetrics().widthPixels) - 400 )/2);
+//        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width, LinearLayout.LayoutParams.WRAP_CONTENT);
+//        layoutParams.setMargins(left,top,0,0);
+//        layout_login.setLayoutParams(layoutParams);
 
 
     }
