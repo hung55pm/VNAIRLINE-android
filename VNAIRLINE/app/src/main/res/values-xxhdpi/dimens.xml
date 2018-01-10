@@ -7,19 +7,9 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_size_title">13dp</dimen>
     <dimen name="text_size_table">11dp</dimen>
+    <dimen name="textview">15dp</dimen>
+    <dimen name="textview_width">80dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
 
 
-
-    <dimen name="width_60">70dp</dimen>
-    <dimen name="width_55">65dp</dimen>
-    <dimen name="width_40">50dp</dimen>
-    <dimen name="width_45">55dp</dimen>
-    <dimen name="width_80">90dp</dimen>
-    <dimen name="width_70">80dp</dimen>
-    <dimen name="width_75">85dp</dimen>
-    <dimen name="width_100">110dp</dimen>
-    <dimen name="width_120">130dp</dimen>
-    <dimen name="width_140">150dp</dimen>
-    <dimen name="magin_tran">2dp</dimen>
-    <dimen name="width_180">200dp</dimen>
 </resources>

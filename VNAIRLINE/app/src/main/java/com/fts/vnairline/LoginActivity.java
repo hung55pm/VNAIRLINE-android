@@ -1,5 +1,6 @@
 package com.fts.vnairline;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -19,6 +20,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,7 +45,7 @@ public class LoginActivity extends Activity {
     int PERMISSION_ALL = 1;
     LocationManager locationManager;
     int RESQUETSCODE_GPS = 99;
-    String[] PERMISSIONS = {android.Manifest.permission.ACCESS_FINE_LOCATION, android.Manifest.permission.CAMERA, android.Manifest.permission.READ_EXTERNAL_STORAGE};
+    String[] PERMISSIONS = {Manifest.permission.WRITE_EXTERNAL_STORAGE ,android.Manifest.permission.CAMERA, android.Manifest.permission.READ_EXTERNAL_STORAGE};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class LoginActivity extends Activity {
         if (!isNetworkConnected()) {
             confirmInternetFailDialog();
         }
+        checkpermission();
         innit();
         btlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +66,7 @@ public class LoginActivity extends Activity {
                 progress.show();
                 Intent in = new Intent(LoginActivity.this, PalletActivity.class);
                 startActivity(in);
+                progress.dismiss();
               //  login(ed_user.getText().toString(),ed_pass.getText().toString());
 
             }
@@ -86,12 +90,15 @@ public class LoginActivity extends Activity {
         ed_user = (EditText) findViewById(R.id.ed_user);
         ed_pass = (EditText) findViewById(R.id.ed_pass);
         remmeber = (Switch) findViewById(R.id.switch1);
-//        layout_login =(LinearLayout)findViewById(R.id.layout_login);
+        layout_login =(LinearLayout)findViewById(R.id.layout_login);
 //        int width = (int) ((getResources().getDisplayMetrics().widthPixels)*0.8);
 //        int left = (int) (((getResources().getDisplayMetrics().widthPixels)*0.2)/2);
 //        int top = (int) (((getResources().getDisplayMetrics().widthPixels) - 400 )/2);
-//        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(width, LinearLayout.LayoutParams.WRAP_CONTENT);
+//        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(width, 600);
 //        layoutParams.setMargins(left,top,0,0);
+//        float density = getResources().getDisplayMetrics().density;
+//        int pad =(int)(30*density);
+//        layout_login.setPadding(pad,0,pad,0);
 //        layout_login.setLayoutParams(layoutParams);
 
 
@@ -195,5 +202,25 @@ public class LoginActivity extends Activity {
 //            Toast.makeText(LoginActivity.this,getResources().getString(R.string.login_fail), Toast.LENGTH_SHORT).show();
 //        }
 //    }
-
+public void checkpermission() {
+    for (int i = 0; i < PERMISSIONS.length; i++) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(PERMISSIONS[i]) != PackageManager.PERMISSION_GRANTED) {
+                if (!hasPermissions(this, PERMISSIONS)) {
+                    ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
+                }
+            }
+        }
+    }
+}
+    public static boolean hasPermissions(Context context, String... permissions) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
+            for (String permission : permissions) {
+                if (ActivityCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }
